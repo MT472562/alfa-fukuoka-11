@@ -79,7 +79,7 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #993C3C;
+  background-color: #740A00;
   width: 287px;
   height: 55px;
 }
@@ -176,7 +176,7 @@ background-color: #2f2e33;
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #993C3C;
+  background-color: #740A00;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -244,7 +244,7 @@ background-color: #2f2e33;
 }
 
 .bg-color--subcolor {
-  background-color: #993C3C;
+  background-color: #740A00;
 }
 
 .bg-color--gray {
@@ -265,7 +265,7 @@ background-color: #2f2e33;
 }
 
 .sub-title__bg {
-  background-color: #993C3C;
+  background-color: #740A00;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -275,7 +275,7 @@ background-color: #2f2e33;
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #993C3C;
+  background-color:#740A00;
   margin: 0 -20px 20px -20px;
 }
 
@@ -285,7 +285,7 @@ background-color: #2f2e33;
 }
 
 .section-title--keycolorlight {
-  background-color: #993C3C;
+  background-color: #740A00;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -293,7 +293,7 @@ background-color: #2f2e33;
 }
 
 .section-title--keycolor {
-  background-color: #993C3C;
+  background-color: #740A00;
 }
 
 .section-title--story {
