@@ -97,10 +97,10 @@ Youtube貼り付けここまで -->
             -------------------------------------------------------------------------------------------------------->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"
           class="section section--clear bg-color--gray">
-          <div class="container">
-            <div class="clear-message">
-              <!-- <video src="videos/Q1Q2.mp4" autoplay muted></video> -->
-              <div class="clear-message__title">STAGE：１ クリア！</div>
+          <!-- <div class="container">
+            <div class="clear-message"> -->
+              <video src="videos/Q1Q2.mp4" autoplay muted></video>
+              <!-- <div class="clear-message__title">STAGE：１ クリア！</div>
               <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが<br>
                 奴はこの程度では許してくれないらしい。<br>
                 「これ、やっぱ観覧車だよなぁ」<br />
@@ -111,10 +111,10 @@ Youtube貼り付けここまで -->
                 <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
                   class="clear-message__btn btn">次のステージへ<svg class="btn__arrow">
                     <use xlink:href="#arrow"></use>
-                  </svg></button>
-                <!-- <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'">次へ</button> -->
-              </div>
-            </div>
+                  </svg></button> -->
+                <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="Q1Q2">次へ</button>
+              <!-- </div>
+            </div> -->
         </section>
         <!-- STAGE1クリア画面　ここまで -->
         <!------------------------------------------------------------------------------------------------------
