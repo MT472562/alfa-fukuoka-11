@@ -12,8 +12,7 @@
   <link rel="icon" href="Pierrot.ico">
 </head>
 
-<body>
-  <button id="buton">全画面化とBGM</button>
+<body id="body">
   <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.47 24.94" id="arrow" class="arrow_svg">
       <title>arrow</title>
@@ -99,8 +98,8 @@ Youtube貼り付けここまで -->
           class="section section--clear bg-color--gray">
           <!-- <div class="container">
             <div class="clear-message"> -->
-              <video src="videos/Q1Q2.mp4" autoplay muted></video>
-              <!-- <div class="clear-message__title">STAGE：１ クリア！</div>
+          <video src="videos/Q1Q2.mp4" class="videos" id="ssk" autoplay muted></video>
+          <!-- <div class="clear-message__title">STAGE：１ クリア！</div>
               <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが<br>
                 奴はこの程度では許してくれないらしい。<br>
                 「これ、やっぱ観覧車だよなぁ」<br />
@@ -112,8 +111,8 @@ Youtube貼り付けここまで -->
                   class="clear-message__btn btn">次のステージへ<svg class="btn__arrow">
                     <use xlink:href="#arrow"></use>
                   </svg></button> -->
-                <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="Q1Q2">次へ</button>
-              <!-- </div>
+          <a v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="ssk">次へ</a>
+          <!-- </div>
             </div> -->
         </section>
         <!-- STAGE1クリア画面　ここまで -->
@@ -138,20 +137,19 @@ Youtube貼り付けここまで -->
                 <div class="container">
                   <h2 class="section-title section-title--keycolorlight"><span
                       class="section-title__stage">STAGE：2</span>パスワードを探せ！</h2>
-                  <h2 class="text-center">数分後</h2>
+                  <h2 class="text-center">前回のおさらい</h2>
                   <p class="text-center">
-
-
-                    私たちの予想は裏切られることになった。<br>
-                    私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br />
-                    観覧車の制御室にピエロが入っていくところを目撃したからだ。<br>
-                    光はついていてしっかりと回転する観覧車がそこにはあった。<br>
-                    しかし、何か嫌な予感がしたのか、尚史は命の頭を押さえてしゃがみこんだ。</br>
-                    私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br>
-                    私もびっくりしたが、彼らはそれ以上だっただろう</br>
-                    明確な死の権化が視認できる場所にいるのだから。</br>
-                    程なくして、観覧車が止まりピエロが出てきた。</br>
-                    ピエロは幸いなことに反対方向に去っていった。</br>
+                    「しーー！！！」
+                    と鬼々迫る表情で言った。
+                    私は訳も分からずだったが、スマホのレンズが向けられた先に写るものを見て驚愕した。
+                    ピエロがいたのだ。
+                    菜穂を殺した張本人が視認できる場所にいるのだから。<br>
+                    怒りが湧いてきた。しかしそれも長くは続かなかった。<br>
+                    二人の震えが画面の揺れとなって伝わってきた。<br>
+                    程なくして、観覧車が止まりピエロが出てきた。
+                    ピエロは幸いなことに反対方向に去っていった。<br>
+                    念の為もう少し待って戻らないのを確認してから出ていったところに行った。<br>
+                    そこは制御室だった。<br>
                   </p>
                   　　　　　　　　　　　<p class="text-center">制御室に入って電源を入れるにはパスワードを入力しなければいけなかった。<br>
                 </div>
@@ -224,7 +222,8 @@ Youtube貼り付けここまで -->
             <!-- STAGE2クリア画面　ここから -->
             <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"
               class="section section--clear bg-color--gray">
-              <div class="container">
+              <video src="videos/Q2Q3.mp4" class="videos" id="ssk" autoplay muted></video>
+              <!-- <div class="container">
                 <div class="clear-message">
                   <div class="clear-message__title">STAGE：2　クリア！</div>
                   <div class="clear-message__content">
@@ -236,7 +235,8 @@ Youtube貼り付けここまで -->
                       <use xlink:href="#arrow"></use>
                     </svg></button>
                 </div>
-              </div>
+              </div> -->
+              <a v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="ssk">次へ</a>
             </section>
             <!-- STAGE2クリア画面　ここまで -->
           </div>
@@ -250,6 +250,7 @@ Youtube貼り付けここまで -->
               <div class="container">
                 <h2 class="section-title section-title--keycolorlight"><span
                     class="section-title__stage">STAGE：3</span>ピエロの目的</h2>
+                    <h2>前回のおさらい</h2>
                 <p class="text-center">
                   暗闇の中、携帯のライトだけを頼りに進んでいくと<br>
                   『オメデトウ！これで最後ダヨ！』というふざけたメモと共にスイッチが置いてあった。<br>

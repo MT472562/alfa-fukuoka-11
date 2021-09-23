@@ -82,6 +82,7 @@ button {
   background-color: #740A00;
   width: 287px;
   height: 55px;
+  color: #fff;
 }
 
 /*******************
@@ -502,7 +503,7 @@ background-color: #2f2e33;
 * Utility
 ********************/
 .text-centerexit {
-  text-align: center;
+  /* text-align: center; */
   color: rgb(252, 252, 252);
 }
 
@@ -543,10 +544,12 @@ video{
   z-index: -1;
 }
 /* ここから下は問題切り替え専用 */
-.Q1Q2{
+.ssk{
   position: fixed;
   top: 90%;
-  right: 1%;
+  right: 2%;
   bottom: 0%;
   overflow: 0;  
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 150%;
 }

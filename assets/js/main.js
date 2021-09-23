@@ -135,15 +135,19 @@ const audio = new Audio("main.mp3");
 var ele = document.documentElement;
 let elem_loop = document.getElementById("buton");
 
-function hideDiv() {
-div.style.display = "none";
-}
-yesButton.addEventListener("click", () => {
-// audio.play();
-ele.requestFullscreen();
-hideDiv();
-});
-elem_loop.addEventListener("click", function(){
-	audio.play();
-	audio.loop = true;  // ループ再生
-}, false);
+// function hideDiv() {
+// div.style.display = "none";
+// }
+// yesButton.addEventListener("click", () => {
+// // audio.play();
+// ele.requestFullscreen();
+// hideDiv();
+// });
+// elem_loop.addEventListener("click", function(){
+// 	audio.play();
+// 	audio.loop = true;  // ループ再生
+// }, false);
+document.getElementById("body").onclick = function() {
+  audio.play();
+	audio.loop = true;
+};
