@@ -128,7 +128,7 @@ app.component('answer-input', {
 })
 
 app.mount('#stage')
-
+// const anot = document.getElementById("bodys");
 const div = document.getElementById("div");
 const yesButton = document.getElementById("buton");
 const audio = new Audio("main.mp3");
@@ -147,7 +147,7 @@ let elem_loop = document.getElementById("buton");
 // 	audio.play();
 // 	audio.loop = true;  // ループ再生
 // }, false);
-document.getElementById("body").onclick = function () {
+document.getElementById("audiosmain").onclick = function () {
   audio.play();
   audio.loop = true;
   ele.requestFullscreen();
