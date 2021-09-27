@@ -128,7 +128,6 @@ app.component('answer-input', {
 })
 
 app.mount('#stage')
-// const anot = document.getElementById("bodys");
 const div = document.getElementById("div");
 const yesButton = document.getElementById("buton");
 const audio = new Audio("main.mp3");
